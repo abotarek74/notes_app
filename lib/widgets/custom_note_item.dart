@@ -36,7 +36,7 @@ class NoteItem extends StatelessWidget {
                 ' Build your career with Mostafa Tarek',
                 style: TextStyle(
                   color: Colors.black.withOpacity(0.5),
-                  fontSize: 15,
+                  fontSize: 18,
                 ),
               ),
             ),
