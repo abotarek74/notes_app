@@ -1,10 +1,11 @@
-import 'package:flutter/material.dart';
+import 'package:bloc/bloc.dart';
+import 'package:meta/meta.dart';
+import 'package:notes_app/model/note_model.dart';
 
-class AddNoteCubit extends StatelessWidget {
-  const AddNoteCubit({super.key});
+part 'add_note_state.dart';
 
-  @override
-  Widget build(BuildContext context) {
-    return const Placeholder();
-  }
+class AddNoteCubit extends Cubit<AddNoteState> {
+  AddNoteCubit() : super(AddNoteInitial());
+
+  addNote(NoteModel note) {}
 }
